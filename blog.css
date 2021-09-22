@@ -1,0 +1,142 @@
+body{
+  margin: none;
+}
+#video{
+  position: relative;
+  overflow: hidden;
+
+}
+#video img{
+  height: 100vh;
+  width: 100%;
+}
+#nonvideo{
+  position: relative;
+  background: white;
+}
+#video div{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  color: white;
+  border: 5px 5px black;
+  padding:20px; 
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+#video div h1{
+  color: #E2C2B9;
+  font-size: 80px;
+}
+@media screen  and (max-width: 500px){
+ 
+  #video div p{
+    font-size: 20px;
+  }
+  #video div h1{
+    font-size: 40px;
+  }
+}
+@media screen  and (max-width: 1200px){
+   #video img{
+      width: auto;
+  }
+  }
+
+@media screen and (max-width: 850px){
+   
+  #video div{
+    font-size: 30px;
+  }
+  }
+#box *{
+  margin: 10px 0px;
+
+}
+#icon a{
+  padding: 8px;
+  font-size: 32px;
+}
+#icon{
+  position: fixed;
+  top: 50%;
+  transform: translate(0%,-50%);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+#icon a:hover{
+  transform: scale(1.25);
+
+}
+@media screen and (max-width: 770px){
+#icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  top: 100%;
+  transform: translate(0%,-100%);
+  border: none;
+  font-size: 500px;
+  background-color:whitesmoke;
+  z-index: 1;
+}
+
+}
+
+}
+@media screen and (max-width: 800px){
+  #nonvideo{
+  position: relative;
+  background: white;
+  transform: translate(0%,0%);
+  padding: 30px;
+}
+  }
+
+
+#cards a{
+  text-decoration: none;
+  transition: 0.1s;
+}
+#cards a img{
+  height: 200px;
+}
+#cards a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.005);
+
+}
+.atext{
+  text-decoration: none;
+  color: black;
+}
+#cards a:hover{
+  color: red;
+}
+
+#admin{
+  width: 40px;
+
+}
+#coroser1 div, #coroser2 div, #coroser3 div{
+  top: 100% ;
+  left: 50% ;
+  transform: translate(-50%,-100%);
+  background-color: rgba( 1 , 1 , 1 , 0.25 );
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 20px;
+
+}
+#main_corousel div:hover{
+  opacity: 0.9;
+}
